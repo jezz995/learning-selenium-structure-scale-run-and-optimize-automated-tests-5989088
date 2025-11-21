@@ -8,11 +8,11 @@ rm -rf ~/chrome138
 
 echo "⬇️ Downloading Chrome for Testing (v138)..."
 mkdir -p ~/chrome138 && cd ~/chrome138
-wget https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.175/win64/chrome-win64.zip
-unzip chrome-win64.zip
+wget https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.175/linux64/chrome-linux64.zip
+unzip chrome-linux64.zip
 
 echo "🔗 Linking chrome binary to /usr/bin/google-chrome"
-sudo ln -sf "$PWD/chrome-win64/chrome" /usr/bin/google-chrome
+sudo ln -sf "$PWD/chrome-linux64/chrome" /usr/bin/google-chrome
 
 echo "📦 Installing required libraries..."
 sudo apt update
